@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">Oun Sokea</div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="socials">
+        <span><i class="fab fa-dribbble"></i></span>
+        <span><i class="fab fa-twitter"></i></span>
+        <span><i class="fab fa-linkedin-in"></i></span>
+      </div>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="intro">
+      <p>Hello, I am Sokea</p>
+      <h1>Product</h1>
+      <h2>Full stack web developer</h2>
+      <p>Based in Cambodia</p>
+      <button class="resume-btn" onclick="window.open('resume.pdf')">Resume</button>
+    </div>
+    <div class="profile-pic">
+      <img src="sokeaoun.jpg" alt="Oun Sokea"/>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
